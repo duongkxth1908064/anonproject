@@ -1,0 +1,71 @@
+/*
+cách 1: dùng thẻ html
+cách 2: dùng id
+cách 3: dùng class
+
+CÚ PHÁP:
+<phần tử lựa chọn> {
+    thuộc tính : giá trị;
+    thuộc tính : giá trị;
+}
+
+ */
+body{
+    background-color: rgb(231, 231, 231);
+    /*background-image: url("../images/ngoc-trinh-5-1572423107231301246873-crop-15724237122011649225014.jpg");*/
+    background-repeat: no-repeat;/* no-repeat repeat-x repeat-y repeat */
+    background-position: center; /* top bottom left right center */
+    /*background-size: 100% 100%;*/
+    background-size: cover;
+}
+h1{
+    color: #ff8c00;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: 400;/*400-normal --> 100 300 400 500 600 700 800 900 */
+    /* thin light normal medium semi-bold bold extra-bold */
+    line-height: 1.5;/* 45px*/
+    text-align: center;/* left right center justify */
+    text-transform: uppercase;/* uppercase lowercase capitalize none*/
+    text-decoration: none;/* underline line-through overline none*/
+}
+p{
+    text-indent: 20px;
+}
+li{
+    list-style: none;/* decimal circle square*/
+}
+
+img {
+    width: 300px;
+}
+div {
+    float: left;
+    width: 300px;
+    height: 500px;
+    /*border: orange 1px solid; !*dashed solid dotted *!*/
+
+    /*border-top: 1px solid #ffa500;*/
+    padding: 5px;
+    box-sizing: border-box; /*border-box content-box*/
+    margin: 15px;
+
+    /*border-radius: 5px;*/
+    /*box-shadow: 5px 6px 5px orange;*/
+
+}
+
+figure {
+    font-family: Arial;
+    font-weight: bold;
+
+}
+
+figcaption{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.price {
+    color: red;
+}
