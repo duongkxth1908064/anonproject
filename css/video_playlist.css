@@ -1,0 +1,126 @@
+.div-1{
+    background-color: red;
+    min-height: 50px;
+}
+.div-2{
+    background-color: green;
+    min-height: 50px;
+}
+.div-3{
+    background-color: pink;
+    min-height: 200px;
+}
+
+.section{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.header{
+    margin-bottom: 50px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    color: #a5a5a1;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section{
+    float: left;
+    width: 100%;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: white;
+    padding: 25px 0;
+}
+header .logo{
+    float: left;
+    width: 30%;
+}
+header .logo a{
+    font-size: 30px;
+    color: #565656;
+}
+
+header .menu{
+    float: right;
+    width: 70%;
+}
+header .menu li{
+    float: right;
+    padding-top: 10px;
+}
+header .menu li a{
+    font-size: 16px;
+    color: #cbcbcb;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+header .menu li a:hover{
+    color: #7b7678;
+}
+
+section{
+    margin-top: 50px;
+}
+
+.content{
+    float: left;
+    width: 66.67%;
+    padding-right: 15px;
+}
+.sidebar{
+    float: right;
+    width: 33.33%;
+    padding-left: 15px;
+}
+
+.block-1{
+    float: left;
+    width: 100%;
+    background-image: url("../images/image2.jpg");
+    background-size: cover;
+}
+.block-1-content{
+    /*background-color: rgba(234,64,64,.7);*/
+    background-color: #ea404070;
+    padding: 30px 120px 30px 20px;
+}
+.block-1 h3{
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+.block-1 p{
+    color: #ffffff;
+}
+.block-2{
+    float: left;
+    width: 100%;
+    padding: 30px 20px;
+    background-color: #fff;
+    margin-top: 30px;
+}
