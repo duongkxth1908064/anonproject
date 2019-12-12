@@ -1,0 +1,128 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #181818;
+}
+ul{
+    list-style: none;
+}
+.left li a{
+    text-decoration: none;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: ;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+.active{
+    color: #ffffff;
+}
+.inactive{
+    color: #9b9b9b;
+}
+.left ul li a:hover{
+    color: #ffffff;
+}
+.fa-home{
+    font-size: xx-large;
+    color: #9b9b9b;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.fa-youtube{
+    font-size: xx-large;
+    color: #9b9b9b;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.fa-tags{
+    font-size: xx-large;
+    color: #9b9b9b;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.fa-award{
+    font-size: xx-large;
+    color: #9b9b9b;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.left{
+    position: fixed;
+    background-color: #000000;
+    float: left;
+    height: 100%;
+    width: 230px;
+}
+.left .anon{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.right{
+    float: left;
+    padding-left: 230px;
+    width: 100%;
+}
+.headerl{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.infol{
+    color: #9b9b9b;
+}
+.right .msec{
+    margin-left: 30px;
+    padding: 40px;
+}
+.seeall{
+    float: right;
+    color: #9b9b9b;
+}
+.seeall:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+ul li a{
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

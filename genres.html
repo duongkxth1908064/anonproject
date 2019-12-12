@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anon - Genres</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendors/fontawesome-free-5.11.2-web/css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="css/genres.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap"/>
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/v1ab8HLRyx4G7AnBhfSd5hzmd61DHYQ4r3odqew3NY9k9rs4EzRLPl66bZ23BV9W2rBVw3k_ifgUD5RpnIVYtutsBf-RugMCFEGkP-zVuOJS-U1UOEhse3OuwWjbIyC4Fi-GDi2U2QomEjbvcLfJonwHKZq2YpvPpURIR0mrCY5vQRX6-U2GjaaF4XpKOZJhxufpvJQbXXklUqeRoh_6Xz62zWK2Ljhr2LVVlRhqiaqMiTNafyvJFMchdlATmeut23SEJHTe_JMZMM8CkCoTyuFLF7f4LlszebMAFQrM15sCv2Twymek5n5hQx38ko_agS19jmsxU4glbueNH8d1riDhP-1dvDRiumcyqc4is3FTsPmJOr-LM2MNBU8Hqtu0U48cWde9fkAJMWo1Qtu-nO2k9rr4EPU2llxU66c1k7UrUO6mAox9FVWZOYyly3MXDDQd1ik_px6FvPoFZw1khqhmYAvrO5-ajHvkOdp2-qu4gZ6RA4wkSEapwdvbJ6tHfz4YVRXr0hBbjXceRboHKzviu6nmexzSPJG75XVCfG7eiHTfyI1tcarlvTQFxgMOkt3wEBzgPmwBKpM81BBI1mSbmfOhBYBKwlMDoW8Bjy7psmvTJVem8yGCRcyWiS7O1C_U9aq_2mBxxdSiIzrL6JqXs6MFsKDH9ktaep670zr-kEWzgwg1MA=s500-no"/>
+</head>
+<body>
+<div class="row">
+    <section class="left">
+        <a href="https://eqevvsd.herokuapp.com/"><img class="anon" src="https://lh3.googleusercontent.com/r2KmGjJt8dl4DQ2eQGTCMxx9yUhcAG3UJBfI5Qx3J83EdpubqTOW6FqaxMMrjVVfkDAuWKM-cLLXmgQZqjRuu7F3_udZdFOjd_Psfu6pItoJ0OzQt-QbWa3f0FsU9dqWU5GKfjPO2Cz3IdgMFe2mzlBKX15Z6KjQ81sLG7qmITwUcRO6rw0NNHuqRBXBxmQ3qX75cFP9Zr36OoDixqUVDJXuUSIDV4bgqWPZL-VUDW92ZPAsFfdb7TYPDx5uqr2eshKHLzEhNl40cCQt4oeZspOVV7SajHT9iyFRLbs5g3KDhqFBTKmMk-GRJ634-pXFZsdmyO8QHLuFiSDM1Pbx4YTtDDdiwYTCBKCTyS0Gr789YiORWA2yGUt0S_E5oF_S_StPq5miNJJfUij7FyiJK-ZRMxtRJKwZViP5cP4o82p8AvnY6LVms4EwhRKkzxyeOVyIgqqmYWR6NECTBfyHp3yZ7TqHNCyiYWmX5qdIBfk01pAPMx6h9WZBULsYIOcbLPwdU3QibIr7V9HTq1jLD-f0sM7FpvWgmoj5dvdXUKEABbsS8nUy_c7De9W5Yt1kZ4NkU7BTq1Bee-L_rKNQYBcIGsXYdd44i0H1i1xVcmXAd0lJ0lDqQF7qcTqNtwkJJ_uQh2JjDYkFNGfbqMXwgHVNqZ823jle1pnZsIJA4abaJndz9cai8g=s200-no"/></a>
+        <ul>
+            <li><a class="inactive" href="http://anonproject.herokuapp.com/"><i class="fas fa-home"></i> Home</a></li>
+            <li><a class="active" href="http://anonproject.herokuapp.com/genres.html"><i style="color: #ffffff" class="fas fa-tags"></i> Genres</a></li>
+            <li><a class="inactive" href="http://anonproject.herokuapp.com/topartists.html"><i class="fas fa-award"></i> Top Artists</a></li>
+            <li><a class="inactive" href="http://anonproject.herokuapp.com/videos.html"><i class="fab fa-youtube"></i> Videos</a></li>
+        </ul>
+    </section>
+    <section class="right">
+        <ul class="nav nav-tabs" role="tablist" style="background-color: #181818; text-decoration: none">
+            <li role="presentation" class="active"><a href="#relevance" aria-controls="relevance" role="tab" data-toggle="tab">Relevance</a></li>
+            <li role="presentation"><a href="#pop" aria-controls="pop" role="tab" data-toggle="tab">Pop</a></li>
+            <li role="presentation"><a href="#edm" aria-controls="edm" role="tab" data-toggle="tab">EDM</a></li>
+            <li role="presentation"><a href="#rap" aria-controls="rap" role="tab" data-toggle="tab">Rap</a></li>
+            <li role="presentation"><a href="#techno" aria-controls="techno" role="tab" data-toggle="tab">Techno</a></li>
+            <li role="presentation"><a href="#alternative" aria-controls="alternative" role="tab" data-toggle="tab">Alternative</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="relevance">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Pop</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top pop songs of the year</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/683908302&color=%23e4c6a2&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Memories</p>
+                            <p style="color: #b3b3b3;">Maroon 5</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/253578518&color=%23e1c5c3&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Where Is The Love?</p>
+                            <p style="color: #b3b3b3;">The Black Eyed Peas</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/632659404&color=%230a0f17&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Dance Monkey</p>
+                            <p style="color: #b3b3b3;">Tones and I</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/701402605&color=%23939284&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Don't Start Now</p>
+                            <p style="color: #b3b3b3;">Dua Lipa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">EDM</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Most rocking track that will blow out your roof.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/611175963&color=%23487e86&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Summer Days</p>
+                            <p style="color: #b3b3b3;">Martin Garrix</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/629430042&color=%23a97162&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Call You Mine</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/706885594&color=%23a1616f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Takeaway</p>
+                            <p style="color: #b3b3b3;">ILLENIUM</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/652911191&color=%23bfbcbb&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">These Are The Times</p>
+                            <p style="color: #b3b3b3;">Martin Garrix</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Rap</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Cultural movements of the Americans.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/624758298&color=%23c8a648&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Ransom</p>
+                            <p style="color: #b3b3b3;">Lil Tecca</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/539018871&color=%23d39037&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Old Town Road</p>
+                            <p style="color: #b3b3b3;">Lil Nas X</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/637082184&color=%230b0908&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Money In The Grave</p>
+                            <p style="color: #b3b3b3;">Drake</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/633996678&color=%239486c6&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Guidance</p>
+                            <p style="color: #b3b3b3;">Chris Brown ft. Drake</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Techno</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Rhythms in our souls.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/656100065&color=%23655396&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Alternative</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">The evolution of Rock.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="pop">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="edm">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="rap">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="techno">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="alternative">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Hits</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top hits of most favorites artists.</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 300px;">
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/486495918&color=%23a83044&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Sweet But Psycho</p>
+                            <p style="color: #b3b3b3;">Ava Max</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297893459&color=%23847c74&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Make Me Move</p>
+                            <p style="color: #b3b3b3;">Culture Code</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/578933490&color=%23544c44&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">No Sleep</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                        <div class="col-md-3 box" style="padding: 22px; height: 100%;">
+                            <iframe width="100%" height="208.25px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/478430433&color=%2318201f&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+                            <p style="color: #ffffff;  font-size: large;">High On Life</p>
+                            <p style="color: #b3b3b3;">Martin Garrix ft. Bonn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+<script type="text/javascript" src="js/jquery3.4.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anon - Videos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendors/fontawesome-free-5.11.2-web/css/all.css"/>
+    <link rel="stylesheet" type="text/css" href="css/videos.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap"/>
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/v1ab8HLRyx4G7AnBhfSd5hzmd61DHYQ4r3odqew3NY9k9rs4EzRLPl66bZ23BV9W2rBVw3k_ifgUD5RpnIVYtutsBf-RugMCFEGkP-zVuOJS-U1UOEhse3OuwWjbIyC4Fi-GDi2U2QomEjbvcLfJonwHKZq2YpvPpURIR0mrCY5vQRX6-U2GjaaF4XpKOZJhxufpvJQbXXklUqeRoh_6Xz62zWK2Ljhr2LVVlRhqiaqMiTNafyvJFMchdlATmeut23SEJHTe_JMZMM8CkCoTyuFLF7f4LlszebMAFQrM15sCv2Twymek5n5hQx38ko_agS19jmsxU4glbueNH8d1riDhP-1dvDRiumcyqc4is3FTsPmJOr-LM2MNBU8Hqtu0U48cWde9fkAJMWo1Qtu-nO2k9rr4EPU2llxU66c1k7UrUO6mAox9FVWZOYyly3MXDDQd1ik_px6FvPoFZw1khqhmYAvrO5-ajHvkOdp2-qu4gZ6RA4wkSEapwdvbJ6tHfz4YVRXr0hBbjXceRboHKzviu6nmexzSPJG75XVCfG7eiHTfyI1tcarlvTQFxgMOkt3wEBzgPmwBKpM81BBI1mSbmfOhBYBKwlMDoW8Bjy7psmvTJVem8yGCRcyWiS7O1C_U9aq_2mBxxdSiIzrL6JqXs6MFsKDH9ktaep670zr-kEWzgwg1MA=s500-no"/>
+</head>
+<body>
+<div class="row">
+    <section class="left">
+        <a href="https://eqevvsd.herokuapp.com/"><img class="anon" src="https://lh3.googleusercontent.com/r2KmGjJt8dl4DQ2eQGTCMxx9yUhcAG3UJBfI5Qx3J83EdpubqTOW6FqaxMMrjVVfkDAuWKM-cLLXmgQZqjRuu7F3_udZdFOjd_Psfu6pItoJ0OzQt-QbWa3f0FsU9dqWU5GKfjPO2Cz3IdgMFe2mzlBKX15Z6KjQ81sLG7qmITwUcRO6rw0NNHuqRBXBxmQ3qX75cFP9Zr36OoDixqUVDJXuUSIDV4bgqWPZL-VUDW92ZPAsFfdb7TYPDx5uqr2eshKHLzEhNl40cCQt4oeZspOVV7SajHT9iyFRLbs5g3KDhqFBTKmMk-GRJ634-pXFZsdmyO8QHLuFiSDM1Pbx4YTtDDdiwYTCBKCTyS0Gr789YiORWA2yGUt0S_E5oF_S_StPq5miNJJfUij7FyiJK-ZRMxtRJKwZViP5cP4o82p8AvnY6LVms4EwhRKkzxyeOVyIgqqmYWR6NECTBfyHp3yZ7TqHNCyiYWmX5qdIBfk01pAPMx6h9WZBULsYIOcbLPwdU3QibIr7V9HTq1jLD-f0sM7FpvWgmoj5dvdXUKEABbsS8nUy_c7De9W5Yt1kZ4NkU7BTq1Bee-L_rKNQYBcIGsXYdd44i0H1i1xVcmXAd0lJ0lDqQF7qcTqNtwkJJ_uQh2JjDYkFNGfbqMXwgHVNqZ823jle1pnZsIJA4abaJndz9cai8g=s200-no"/></a>
+        <ul>
+            <li><a class="inactive" href="http://anonproject.herokuapp.com/"><i class="fas fa-home"></i> Home</a></li>
+            <li><a class="inactive" href="http://anonproject.herokuapp.com/genres.html"><i class="fas fa-tags"></i> Genres</a></li>
+            <li><a class="inactive" href="http://anonproject.herokuapp.com/topartists.html"><i class="fas fa-award"></i> Top Artists</a></li>
+            <li><a class="active" href="http://anonproject.herokuapp.com/videos.html"><i  style="color: #ffffff" class="fab fa-youtube"></i> Videos</a></li>
+        </ul>
+    </section>
+    <section class="right">
+        <ul class="nav nav-tabs" role="tablist" style="background-color: #181818; text-decoration: none">
+            <li role="presentation" class="active"><a href="#relevance" aria-controls="relevance" role="tab" data-toggle="tab">Relevance</a></li>
+            <li role="presentation"><a href="#pop" aria-controls="pop" role="tab" data-toggle="tab">Pop</a></li>
+            <li role="presentation"><a href="#edm" aria-controls="edm" role="tab" data-toggle="tab">EDM</a></li>
+            <li role="presentation"><a href="#rap" aria-controls="rap" role="tab" data-toggle="tab">Rap</a></li>
+            <li role="presentation"><a href="#techno" aria-controls="techno" role="tab" data-toggle="tab">Techno</a></li>
+            <li role="presentation"><a href="#alternative" aria-controls="alternative" role="tab" data-toggle="tab">Alternative</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="relevance">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Vids</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top pop songs of the year</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Vids</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top pop songs of the year</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Vids</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top pop songs of the year</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Vids</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top pop songs of the year</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Vids</p>
+                    <a class="seeall" href="#">SEE MORE</a>
+                    <p class="infol">Top pop songs of the year</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;background-color: #272727;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in" id="pop">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Vids</p>
+                    <p class="infol">Top pop songs of the year</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden; height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in" id="edm">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Vids</p>
+                    <p class="infol">Top pop songs of the year</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden; height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in" id="rap">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Vids</p>
+                    <p class="infol">Top pop songs of the year</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden; height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in" id="techno">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Vids</p>
+                    <p class="infol">Top pop songs of the year</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden; height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade in" id="alternative">
+                <div class="msec" style="margin-top: 40px">
+                    <p class="headerl">Vids</p>
+                    <p class="infol">Top pop songs of the year</p>
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden; height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="msec" style="margin-top: 40px">
+                    <div class="col-md-12" style="border-radius: 15px; overflow: hidden;height: 350px;">
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460px" height="259" src="https://www.youtube-nocookie.com/embed/PT2_F-1esPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Closer</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. Halsey</p>
+                        </div>
+                        <div class="col-md-6 box" style="padding: 22px; height: 100%;">
+                            <iframe width="460" height="259" src="https://www.youtube-nocookie.com/embed/mBZdHuZCfic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p style="color: #ffffff;  font-size: large;">Roses</p>
+                            <p style="color: #b3b3b3;">The Chainsmokers ft. ROZES</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+<script type="text/javascript" src="js/jquery3.4.1.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
