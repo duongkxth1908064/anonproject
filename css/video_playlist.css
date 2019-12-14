@@ -28,7 +28,7 @@
 }
 
 body{
-    background-color: #f2f2f2;
+    background-color: #181818;
     color: #a5a5a1;
     font-size: 14px;
     font-weight: 400;
@@ -46,11 +46,6 @@ a{
 .section{
     float: left;
     width: 100%;
-}
-
-.container{
-    width: 1170px;
-    margin: 0 auto;
 }
 
 header{
