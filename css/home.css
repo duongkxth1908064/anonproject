@@ -13,7 +13,7 @@ ul{
     text-align: center;
     text-transform: ;
     font-weight: bold;
-    font-size: x-large;
+    font-size: large;
     margin-bottom: 20px;
 }
 .active{
@@ -26,25 +26,25 @@ ul{
     color: #ffffff;
 }
 .fa-home{
-    font-size: xx-large;
+    font-size: large;
     color: #ffffff;
     padding-top: 20px;
     padding-bottom: 10px;
 }
 .fa-youtube{
-    font-size: xx-large;
+    font-size: large;
     color: #9b9b9b;
     padding-top: 20px;
     padding-bottom: 10px;
 }
 .fa-tags{
-    font-size: xx-large;
+    font-size: large;
     color: #9b9b9b;
     padding-top: 20px;
     padding-bottom: 10px;
 }
 .fa-award{
-    font-size: xx-large;
+    font-size: large;
     color: #9b9b9b;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -75,7 +75,7 @@ ul{
 }
 .right .msec{
     margin-left: 30px;
-    padding: 40px;
+    padding: 40px 40px 0px 40px;
 }
 .seeall{
     float: right;
@@ -84,6 +84,14 @@ ul{
 .seeall:hover{
     text-decoration: none;
     color: #ffffff;
+}
+.col-md-3{
+    margin:10px;
+    width: calc(25% - 20px);
+}
+.col-md-6{
+    margin:10px;
+    width: calc(50% - 20px);
 }
 
 
